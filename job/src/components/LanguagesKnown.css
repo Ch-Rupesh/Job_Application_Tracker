@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.language-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.language-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px; /* Increased width from 300px to 400px */
+  text-align: center;
+  position: relative;
+}
+
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.language-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.language-box button.selected {
+  background-color: #28a745;
+}
+
+.language-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Updated Save Button Styles with Animation */
+.save-button {
+  background-color: #e50202;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Updated Close Button Styles for a Small, Simple X */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #981919;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.selected-bar {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Match the increased width */
+  text-align: center;
+}
+
+.selected-language {
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+}

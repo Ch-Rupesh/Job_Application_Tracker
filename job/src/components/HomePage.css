@@ -1,0 +1,264 @@
+body, html {
+  height: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('./backimg.jpg'); 
+  background-size: cover;
+  display: flex;
+  flex-direction: column; /* Use flexbox */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  transition: transform 0.5s ease-in-out;
+  margin: 0; /* Remove default margin */
+  position: flex;
+  z-index: 0;
+}
+
+body.zoom-in {
+  transform: scale(1.1); 
+}
+
+body.zoom-out {
+  transform: scale(0.9); 
+}
+
+.fixed-container { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Allows scrolling if content exceeds window size */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background: transparent;
+}
+
+.Login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  max-width: 1400px; 
+}
+
+.popup-message {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.App-header {
+  width: 100%;
+  padding: 40px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; 
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #4020e1; 
+}
+
+.active {
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1; 
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px; 
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.dropdown-content button:hover {
+  background-color: #e7dfdf;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.login-buttons {
+  display: flex;
+  gap: 20px; 
+}
+
+
+.login-button {
+  background-color: #621bd5; 
+  color: white; 
+  border: none;
+  padding: 10px 20px; 
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 0px 0px 0px;
+  min-width: 200px; 
+  text-align: center; 
+}
+
+.login-button:hover {
+  background-color: #1041e2; 
+}
+
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1.single-line {
+  white-space: nowrap;
+  color: #2ecc71; 
+}
+
+h3 {
+  color: #0a0a0a;
+  text-align: left;
+}
+
+p {
+  color: #000000;
+  text-align: left; 
+  margin-left: 150px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  border: 1px solid #ced4da;
+  outline: none;
+  font-size: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-title {
+  border-radius: 25px 0 0 25px;
+}
+
+.input-experience {
+  border-radius: 0;
+}
+
+.input-area {
+  border-radius: 0 0 0 0px;
+  width: 100%;
+}
+
+.search-bar .search-button {
+  background-color: #28a745;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+
+.search-bar .search-button .icon {
+  color: white;
+  font-size: 20px;
+}
+
+.phone-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.phone-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.footer p {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.input-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon-symbol {
+  position: absolute;
+  left: 10px;
+  color: #417cb8;
+}
+
+.input-icon input {
+  padding-left: 35px; 
+}
+.fixed-container {
+  position: relative;
+}
+
+.side-image {
+  position: fixed;
+  z-index: -1;
+}
+
+
+
+/* .App-header {
+  padding-right: 160px; 
+} */
+
+
